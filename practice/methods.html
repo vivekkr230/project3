@@ -1,0 +1,15 @@
+<script>
+    class product{
+       Name="Samsung TV"
+       Price=56000
+       Quantity=2
+       print(){
+           document.write(`Name:${this.Name}<br>Price:${this.Price}<br>Quantity:${this.Quantity}<br>Total:${this.total()}`)
+       }
+       total(){
+            return this.Price*this.Quantity
+       }
+    }
+    let obj=new product()
+    obj.print();
+</script>

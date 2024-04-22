@@ -1,0 +1,28 @@
+[
+    {
+        "title":"iPhone 15 pink",
+        "rating":{"rate":4.5,"review":5674},
+        "price":82999,
+        "feature":[
+            "128 gb ROM",
+            "6.7 inch super ratina XDR Display",
+            "48MP + 12MP | 12MP front camera",
+            "A16 bionic chip,6 core Processor",
+            "1 year warranty for phone and 6 months warranty for In-Box"
+        ],
+        "image":"iphone15.jpg"
+    },
+    {
+        "title":"iPhone 15 blue",
+        "rating":{"rate":4.5,"review":5674},
+        "price":82999,
+        "feature":[
+            "128 gb ROM",
+            "6.7 inch super ratina XDR Display",
+            "48MP + 12MP | 12MP front camera",
+            "A16 bionic chip,6 core Processor",
+            "1 year warranty for phone and 6 months warranty for In-Box"
+        ],
+        "image":"iphoneb15.jpg"
+    }
+]

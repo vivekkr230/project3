@@ -1,0 +1,19 @@
+<script>
+    class rating{
+        rate={
+            vendor:{
+                direct:{rate:40},
+                indirect:{rate:50}
+            }
+        }
+        get Rating(){
+            return this.rate.vendor.direct.rate
+        }
+        set Rating(x){
+            this.rate.vendor.direct.rate=x;
+        }
+    }
+    let obj=new rating()
+    obj.Rating=prompt(`Enter the new rate`);
+    document.write(`The Product rating is ${obj.Rating}`)
+</script>

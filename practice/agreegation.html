@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class HDFC_VER1 {
+            personal = "personal banking service";
+            nri = "banking service for nri";
+            print() {
+                document.write(`${this.personal} <br> ${this.nri}`)
+            }
+        }
+        class HDFC_VER2 {
+            ari = "government scheme"
+            print() {
+                let obj = new HDFC_VER1
+                obj.print()
+                document.write(`${this.ari}<br>`)
+            }
+
+        }
+        class HDFC_VER3 {
+            mobile = "for mobile banking"
+            print() {
+                let obj = new HDFC_VER2
+                obj.print()
+                document.write(`${this.mobile}`)
+            }
+        }
+        function displayversion() {
+            alert( `hello`)
+            var version = document.querySelector("select").value;
+            switch (version) {
+                case "ver1":
+                    let obj1 = new HDFC_VER1()
+                    obj1.print()
+                    break;
+                case "ver2":
+                    let obj2 = new HDFC_VER2()
+                    obj2.print()
+                    break;
+                case "ver3":
+                    let obj3 = new HDFC_VER3()
+                    obj3.print()
+                    break;
+                default:
+                    document.write(`please select a version`)
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>
+                Select A Version
+            </legend>
+            <select>
+                <option value="-1">Select</option>
+                <option value="ver1">ver1</option>
+                <option value="ver2">ver2</option>
+                <option value="ver3">ver3</option>
+            </select>
+            <button onclick="displayversion()">Submit</button>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>

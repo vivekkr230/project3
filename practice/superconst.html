@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class ParentConstructor{
+            constructor(){
+                alert(`hi`);
+                document.write(`this is ParentConstructor <br>`)
+            }
+        }
+        class DerivedConstructor extends ParentConstructor{
+            constructor(){
+                super()
+                document.write(`this is defaultConstructor`)
+            }
+        }
+        let obj=new DerivedConstructor()
+
+    </script>
+</head>
+<body>
+    <h2>hii</h2>
+</body>
+</html>
